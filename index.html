@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caculadora</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+<body>
+    <center>
+    <div class="container">
+        <div class="card border-dark m-3 float-center" style="max-width: 50rem;">
+            <div class="card-header text-white bg-dark">Calculadora</div>
+            <div class="card-body float-center">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                        <img src="calculadora.jpg" alt="sesion" class="img-fluid">
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                        <form id="miFormulario" name="">
+                            <label>Numero 1:</label>
+                            <input class="form-control" type="number" name="" id="valor1" autofocus placeholder="Escribe un numero">
+                            <br>
+                            <label>Numero 2:</label>
+                            <input class="form-control" type="number" name="" id="valor2" autofocus placeholder="Escribe otro numero">
+                            <br>
+                            <br>
+                            
+                            <button type="button" class="btn btn-outline-success" onclick="sumar();">Sumar</button>
+                            <button type="button" class="btn btn-outline-success" onclick="restar();">Restar</button>
+                            <button type="button" class="btn btn-outline-success" onclick="multiplicar();">Multiplicar</button>
+                            <button type="button" class="btn btn-outline-success" onclick="dividir();">Dividir</button>
+                            <br> <br>
+                            <button class="btn btn-outline-success" onclick="limpiar();">Limpiar Campos</button>
+                            
+                            </form>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </center>
+
+    <script src="operaciones.js"></script>
+</body>
+</html>
